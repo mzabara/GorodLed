@@ -18,92 +18,668 @@
     <![endif]-->
 </head>
 <body>
+    <section id="wrap">
+    <header class="navbar-fixed-top" id="headerHolder">
 
-<header>
-      q
-</header>
-
-<main>
-    ss
-</main>
-
-<footer>
-    <section class="container-fluid footer-box">
-        <div class="row">
-            <div class="col-lg-4">
-                <p>© «LEDPROM», 2009 – 2014</p>
-                <addres>Россия, 129301, Москва, м. ВДНХ, ул. Касаткина 3а</addres>
-            </div>
-            <div class="col-lg-4">
-                Многоканальный тел.: +7 (495) 669-36-66 Факс: +7 (495) 682-60-72
-            </div>
-            <div class="col-lg-4">
-                d
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-8 catalog-nav-holder" data-toggle="collapse" data-parent="headerHolder" data-target="#main-nav-holder">
+                    <i class="fa fa-list fa-lg"></i> КАТАЛОГ / ПОИСК
+                </div>
+                <div class="col-md-2 col-xs-2 auth-holder">
+                    <a href="">
+                        <i class="fa fa-sign-in"></i>
+                        <span class="item-title hidden-sm hidden-xs">
+                            Вход / Регистрация
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-2 tel hidden-xs hidden-sm">
+                    <span>+7 (495) 669-36-66</span>
+                    <a href="">Заказать обратный звонок</a>
+                </div>
+                <div class="col-md-4 col-xs-2 header-shoping-cart"  data-toggle="collapse" data-parent="headerHolder"  data-target="#shopping-cart-holder">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="badge hidden-md hidden-lg">2</span>
+                    <span class="item-title hidden-xs hidden-sm">
+                        2 товара / <strong>60 000</strong> <i class="fa fa-rub"></i> <b class="caret"></b>
+                    </span>
+                </div>
             </div>
         </div>
-    </section>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom hidden" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Отложенные товары: 0 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+        <div id="shopping-cart-holder" class="collapse">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="col-xs-2">
+                        <a href="">
+                            <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                        </a>
+                    </td>
+                    <td class="col-xs-7">
+                        <a href="" class="product-title">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
+                        <span class="cost">
+                            25 000 <i class="fa fa-rub"></i>
+                        </span>
+                    </td>
+                    <td class="col-xs-2 text-center">
+                        <input type="text" class="form-control text-center" placeholder="кол-во"/>
+                    </td>
+                    <td class="col-xs-1 text-right">
+                        <a href=""><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-2">
+                        <a href="">
+                            <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                        </a>
+                    </td>
+                    <td class="col-xs-7">
+                        <a href="" class="product-title">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
+                        <span class="cost">
+                            25 000 <i class="fa fa-rub"></i>
+                        </span>
+                    </td>
+                    <td class="col-xs-2 text-center">
+                        <input type="text" class="form-control text-center" placeholder="кол-во" value="10"/>
+                    </td>
+                    <td class="col-xs-1 text-right">
+                        <a href=""><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+                <tr class="total-cost">
+                    <td class="text-right">
+                        Итого:
+                    </td>
+                    <td colspan="3">
+                        <a href="#" class="btn btn-primary pull-right">Оформить заказ</a>
+                        <span class="cost pull-left">
+                            60 000 <i class="fa fa-rub"></i>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div id="main-nav-holder" class="collapse">
+        <div class="search-holder">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 text-center">
+                    <img src="images/promo/logo-color.png" alt=""/><div class="logo-txt">GORODLED.ru</div>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <form action="" class="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск по сайту">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                          </span>
+                        </div><!-- /input-group -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" id="catalog-multilevel-menu">
+                <ul class="catalog-multilevel-menu">
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu" href="#collapseSub">
+                            <b class="caret pull-right"></b>
+                            Светодиодные ленты
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Сравнение товаров: 0 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
+                    <li>
+                        <a href="#">
+                            Импульсные источники питания
+                        </a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Корзина: пуста <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                    <li>
+                        <a href="#">
+                            Управление светом
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Профили для лент
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Комплектующие для монтажа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Светодиодные модули
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LED Неон флекс
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu" href="#collapseSub-2">
+                            <b class="caret pull-right"></b>
+                            Светодиодные лампы
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub-2">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>ID:150111</li>
+            </div>
+            <div class="col-md-4" id="catalog-multilevel-menu-2">
+
+                <ul class="catalog-multilevel-menu">
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu-2" href="#collapseSub-3">
+                            <b class="caret pull-right"></b>
+                            Светодиодные ленты
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub-3">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Импульсные источники питания
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Управление светом
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Профили для лент
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Комплектующие для монтажа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Светодиодные модули
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LED Неон флекс
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu-2" href="#collapseSub-4">
+                            <b class="caret pull-right"></b>
+                            Светодиодные лампы
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub-4">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-</footer>
+            </div>
+            <div class="col-md-4" id="catalog-multilevel-menu-3">
+
+                <ul class="catalog-multilevel-menu">
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu-3" href="#collapseSub-5">
+                            <b class="caret pull-right"></b>
+                            Светодиодные ленты
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub-5">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Импульсные источники питания
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Управление светом
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Профили для лент
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Комплектующие для монтажа
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Светодиодные модули
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LED Неон флекс
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#catalog-multilevel-menu-3" href="#collapseSub-6">
+                            <b class="caret pull-right"></b>
+                            Светодиодные лампы
+                        </a>
+                        <ul class="catalog-multilevel-menu-level-2 collapse" id="collapseSub-6">
+                            <li>
+                                <a href="#">
+                                    Открытые
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Герметичные
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Mix ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DIP ленты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Бегущий огонь
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ленты бокового свечения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Светодиодные листы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </header>
+
+    <main>
+
+
+        <section class="index-promo-holder">
+            <div class="hit-tabs">
+                <div class="container">
+                    <ul id="indexTab" class="nav nav-pills">
+                        <li class="active"><a href="#newst" data-toggle="tab">Новинки</a></li>
+                        <li class=""><a href="#hits" data-toggle="tab">Хиты</a></li>
+                    </ul>
+                    <div id="indexTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="newst">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n1.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n2.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n3.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n4.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="hits">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n5.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n6.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n7.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#">
+                                        <img src="images/newst/n8.jpg" alt="" class="img-responsive"/>
+                                        <span class="item-title">
+                                            Заголовок товара
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img src="images/promo/pr1.jpg" alt="" class="img-responsive hidden-xs"/>
+        </section>
+        <section class="benefits-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="">
+                            <span class="icon img-circle"><i class="fa fa-rocket"></i></span><span class="item-title">бесплатная доставка</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="">
+                            <span class="icon img-circle"><i class="fa fa-clock-o"></i></span><span class="item-title">Доставка в день заказа</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="">
+                            <span class="icon img-circle"><i class="fa fa-map-marker"></i></span><span class="item-title">Удобные пункты самовывоза</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="">
+                            <span class="icon img-circle"><i class="fa fa-gift"></i></span><span class="item-title">Бонусы за покупки</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment-social-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <ul class="list-inline">
+                            <li>
+                                Принимаем к оплате
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/icons/visa.png" alt=""/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/icons/mastercard.png" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 text-center hidden-xs">
+                        <ul class="list-inline socials">
+                            <li>
+                                <a href="">
+                                    <img src="images/promo/soc.jpg" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-text">
+            <div class="container">
+                <p>«GOROD LED» — КРУПНЕЙШИЙ РОССИЙСКИЙ ИНТЕРНЕТ МАГАЗИН ПО ПРОДАЖЕ СВЕТОДИОДНОЙ ТЕХНИКИ И СВЕТОДИОДНОГО ОБОРУДОВАНИЯ.</p>
+                <p>Производство светодиодных светильников, разработанных на базе светодиодов компании NICHIA, является основным направлением нашей деятельности. С каждым годом мы совершенствуем свои знания и навыки в разработке все более качественных и высокоэффективных приборов.</p>
+                <p>Компания «ЛЕДПРОМ» имеет лицензии Российской Федерации на исполнение основных видов проектных и строительных работ. Весь инженерно-технический состав имеет высшее инженерное  или строительное образование, квалификационные аттестаты Российской Федерации на ведение профессиональной деятельности и большой опыт работы в сфере производства, поставки и монтажа осветительного оборудования.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-help-box">
+            <div  class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span class="help-phone">Затрудняетесь с выбором? Мы поможем &mdash; +7 (495) 669-36-66</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>&copy; «LEDPROM», 2009 &mdash; 2014</p>
+                        <addres>Россия, 129301, Москва, м. ВДНХ, ул. Касаткина 3а</addres>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="tel">Многоканальный тел.: +7 (495) 669-36-66 Факс: +7 (495) 682-60-72</span>
+                    </div>
+                    <div class="col-md-4">
+                        d
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+</section>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/function.js"></script>
 </body>
 </html>

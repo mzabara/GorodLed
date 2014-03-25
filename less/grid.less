@@ -55,6 +55,20 @@
 
 .make-grid(xs);
 
+@media (max-width: @screen-xs) {
+  .make-grid(xs);
+  header{
+    position: relative!important;
+    margin-bottom: -55px;
+  }
+  .hit-tabs{
+    position: relative!important;
+  }
+  #shopping-cart-holder{
+    width: 100%!important;
+    position: relative!important;
+  }
+}
 
 // Small grid
 //
@@ -63,6 +77,17 @@
 
 @media (min-width: @screen-sm-min) {
   .make-grid(sm);
+}
+
+@media (max-width: @screen-sm-min) {
+  header{
+    position: relative!important;
+    margin-bottom: -55px;
+  }
+  #shopping-cart-holder{
+    width: 100%!important;
+    position: relative!important;
+  }
 }
 
 
