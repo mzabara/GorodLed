@@ -14,8 +14,9 @@
                 </list>
               </option>
               <option name="id" value="0" />
+              <option name="includePattern" value="bootstrap.less" />
               <option name="lessDirPath" value="D:\www\home\localhost\www\gorodled\less" />
-              <option name="name" value="max" />
+              <option name="name" value="gorodled" />
             </LessProfile>
           </value>
         </entry>

@@ -18,7 +18,6 @@
     <![endif]-->
 </head>
 <body>
-    <section id="wrap">
     <header class="navbar-fixed-top" id="headerHolder">
 
         <div class="container-fluid">
@@ -27,10 +26,10 @@
                     <i class="fa fa-list fa-lg"></i> КАТАЛОГ / ПОИСК
                 </div>
                 <div class="col-md-2 col-xs-2 auth-holder">
-                    <a href="">
+                    <a href="#auth-modal" data-toggle="modal">
                         <i class="fa fa-sign-in"></i>
                         <span class="item-title hidden-sm hidden-xs">
-                            Вход / Регистрация
+                            Вход
                         </span>
                     </a>
                 </div>
@@ -152,9 +151,47 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a data-toggle="collapse" data-parent="#catalog-multilevel-menu" href="#collapseSubSub">
+                                    <b class="caret pull-right"></b>
                                     Бегущий огонь
                                 </a>
+                                <ul class="catalog-multilevel-menu-level-3 collapse" id="collapseSubSub">
+                                    <li>
+                                        <a href="#">
+                                            Открытые
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Герметичные
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Mix ленты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            DIP ленты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Бегущий огонь
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Ленты бокового свечения
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Светодиодные листы
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">
@@ -497,83 +534,92 @@
             <div class="hit-tabs">
                 <div class="container">
                     <ul id="indexTab" class="nav nav-pills">
-                        <li class="active"><a href="#newst" data-toggle="tab">Новинки</a></li>
-                        <li class=""><a href="#hits" data-toggle="tab">Хиты</a></li>
+                        <li class="active"><a href="#videos" data-toggle="tab">Наше видео</a></li>
+                        <li class=""><a href="#sales" data-toggle="tab">Распродажа</a></li>
+                        <li class=""><a href="#newst" data-toggle="tab">Новинки</a></li>
                     </ul>
                     <div id="indexTabContent" class="tab-content">
-                        <div class="tab-pane fade active in" id="newst">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n1.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n2.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n3.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n4.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="hits">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n5.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n6.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n7.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <a href="#">
-                                        <img src="images/newst/n8.jpg" alt="" class="img-responsive"/>
-                                        <span class="item-title">
-                                            Заголовок товара
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
+                        <div class="tab-pane fade active in" id="videos">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#video-modal" data-toggle="modal" class="thumbnail">
+                                        <img src="images/newst/n1.jpg" alt="" class="img-responsive"/>
+                                        <span class="caption">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    Светодиодная лента LP 24V IP22
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="cost">
+                                                        <span class="price-regular">2 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="price-old">2 500 <i class="fa fa-rub"></i></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#video-modal" data-toggle="modal" class="thumbnail">
+                                        <img src="images/newst/n2.jpg" alt="" class="img-responsive"/>
+                                        <span class="caption">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    Светодиодная лента LP 24V IP22
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="cost">
+                                                        <span class="price-regular">20 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="price-old">25 000 <i class="fa fa-rub"></i></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#video-modal" data-toggle="modal" class="thumbnail">
+                                        <img src="images/newst/n3.jpg" alt="" class="img-responsive"/>
+                                        <span class="caption">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    Светодиодная лента LP 24V IP22
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="cost">
+                                                        <span class="price-regular">20 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="price-old">25 000 <i class="fa fa-rub"></i></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <a href="#video-modal" data-toggle="modal" class="thumbnail">
+                                        <img src="images/newst/n4.jpg" alt="" class="img-responsive"/>
+                                        <span class="caption">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    Светодиодная лента LP 24V IP22
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <span class="cost">
+                                                        <span class="price-regular">20 000 <i class="fa fa-rub"></i></span>
+                                                        <span class="price-old">25 000 <i class="fa fa-rub"></i></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sales">
+                        </div>
+                        <div class="tab-pane fade" id="newst">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -583,24 +629,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6 col-sm-3">
-                        <a href="">
+                        <div class="benefits-item" data-container="body" data-toggle="popover" data-placement="top" data-content="Бесплатно доставляем по всей России. По Москве – множество товаров других брендов из нашего каталога.">
                             <span class="icon img-circle"><i class="fa fa-rocket"></i></span><span class="item-title">бесплатная доставка</span>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <a href="">
+                        <div class="benefits-item" data-container="body" data-toggle="popover" data-placement="top" data-content="Возможна доставка в день заказа, в том числе в ночное время суток.">
                             <span class="icon img-circle"><i class="fa fa-clock-o"></i></span><span class="item-title">Доставка в день заказа</span>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <a href="">
+                        <div class="benefits-item" data-container="body" data-toggle="popover" data-placement="top" data-content="Обеспечим удобный самовывоз в одном из наших магазинов или пунктов самовывозов наших партнеров.">
                             <span class="icon img-circle"><i class="fa fa-map-marker"></i></span><span class="item-title">Удобные пункты самовывоза</span>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <a href="">
+                        <div class="benefits-item" data-container="body" data-toggle="popover" data-placement="top" data-content="Дарим бонус в размере 5% от стоимости каждого товара. 1 бонус = 1 рублю. При следующей покупке Вы сможете расплатиться накопленными бонусами – частично или полностью.">
                             <span class="icon img-circle"><i class="fa fa-gift"></i></span><span class="item-title">Бонусы за покупки</span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -626,11 +672,25 @@
                         </ul>
                     </div>
                     <div class="col-md-8 text-center hidden-xs">
-                        <ul class="list-inline socials">
+                        <ul class="list-inline socials pull-right">
                             <li>
-                                <a href="">
-                                    <img src="images/promo/soc.jpg" alt=""/>
-                                </a>
+                                <div id="ok_shareWidget"></div>
+                                <script>
+                                    !function (d, id, did, st) {
+                                        var js = d.createElement("script");
+                                        js.src = "http://connect.ok.ru/connect.js";
+                                        js.onload = js.onreadystatechange = function () {
+                                            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                                if (!this.executed) {
+                                                    this.executed = true;
+                                                    setTimeout(function () {
+                                                        OK.CONNECT.insertShareWidget(id,did,st);
+                                                    }, 0);
+                                                }
+                                            }};
+                                        d.documentElement.appendChild(js);
+                                    }(document,"ok_shareWidget","http://dev.ok.ru","{width:100,height:30,st:'oval',sz:20,nt:1}");
+                                </script>
                             </li>
                         </ul>
                     </div>
@@ -645,13 +705,107 @@
             </div>
         </section>
     </main>
+    <section class="footer-bar navbar-fixed-bottom">
+        <div class="container" id="footer-bar-collapse">
+            <div class="panel">
 
+                <div class="footer-bar-holder" data-toggle="collapse" data-target="#compare-collapse" data-parent="#footer-bar-collapse">
+                    <i class="fa fa-signal fa-lg"></i><span class="hidden-xs">Сравнение товаров:</span> <strong>5</strong>
+                </div>
+
+                <div class="footer-bar-holder-content collapse" id="compare-collapse">
+
+                        <div class="collapse-header">
+                            <button type="button" class="close close-compare-collapse">&times;</button>
+                            Сравниваемые товары
+                        </div>
+
+                        <div class="collapse-body">
+                            <div class="list-responsive">
+                                <ul class="product-list tile">
+                                    <li>
+                                        s
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="collapse-footer">
+                            <div class="row">
+                                <div class="col-xs-12 text-right">
+                                    <a href="" class="btn btn-primary btn-sm">Перейти к сравнению</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+
+                <div class="footer-bar-holder" data-toggle="collapse" data-target="#favorite-collapse" data-parent="#footer-bar-collapse">
+                    <i class="fa fa-heart fa-lg"></i><span class="hidden-xs">Отложенные товары:</span> 0
+                </div>
+
+                <div class="footer-bar-holder-content collapse" id="favorite-collapse">
+                    <div class="collapse-header">
+                        <button type="button" class="close close-favorite-collapse">&times;</button>
+                        Отложенные товары
+                    </div>
+
+                    <div class="collapse-body">
+
+                    </div>
+
+                    <div class="collapse-footer">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <a href="" class="btn btn-primary btn-sm">Перейти к отложенным товарам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-bar-holder" data-toggle="collapse" data-target="#shopping-cart-collapse" data-parent="#footer-bar-collapse">
+                    <i class="fa fa-shopping-cart fa-lg"></i> 2 товара / <strong>60 000</strong> <i class="fa fa-rub"></i>
+                </div>
+
+                <div class="footer-bar-holder-content collapse" id="shopping-cart-collapse">
+
+                    <div class="collapse-header">
+                        <button type="button" class="close close-shopping-cart">&times;</button>
+                        Ваша корзина
+                    </div>
+
+                    <div class="collapse-body">
+
+                    </div>
+
+                    <div class="collapse-footer">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                Итого: 2 товара, на сумму 60 000 <i class="fa fa-rub"></i> <a href="" class="btn btn-primary btn-sm">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <footer>
         <section class="footer-help-box">
             <div  class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <span class="help-phone">Затрудняетесь с выбором? Мы поможем &mdash; +7 (495) 669-36-66</span>
+                    <div class="col-md-6 text-left">
+                        <nav class="footer-sub-nav">
+                            <a href="#">Партнерам</a>
+                            <a href="#">Оплата и доставка</a>
+                            <a href="#">Как купить?</a>
+                            <a href="#">Контакты</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <span class="help-phone">Есть вопрос? Мы поможем &mdash; +7 (495) 669-36-66</span>
                     </div>
                 </div>
             </div>
@@ -664,17 +818,70 @@
                         <addres>Россия, 129301, Москва, м. ВДНХ, ул. Касаткина 3а</addres>
                     </div>
                     <div class="col-md-4">
-                        <span class="tel">Многоканальный тел.: +7 (495) 669-36-66 Факс: +7 (495) 682-60-72</span>
+                        <p>Многоканальный тел.: +7 (495) 669-36-66</p>
+                        <p>Факс: +7 (495) 682-60-72</p>
                     </div>
                     <div class="col-md-4">
-                        d
+                        <form class="subscribe-form" role="form">
+                            <label for="subscribeForm">Подпишитесь на акции и скидки</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="subscribeForm" placeholder="Введите ваш email">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Подписаться</button>
+                                  </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
 
     </footer>
-</section>
+    <div class="modal fade" id="video-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Наше видео</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="//www.youtube.com/embed/SKbJIUBwC30" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="auth-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Вход в личный кабинет</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Ваш email (логин)</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <div class="pull-right"><a href="">Забыли пароль?</a></div>
+                            <label for="exampleInputPassword1">Пароль</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Запомнить меня
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                        <button type="submit" class="btn btn-info">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
