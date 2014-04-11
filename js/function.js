@@ -1,8 +1,6 @@
     $(document).ready(function () {
-
-
+        $('[data-toggle="tooltip"]').tooltip('hide');
         $('[data-toggle="popover"]').popover();
-
         $('body').on('click', function (e) {
             $('[data-toggle="popover"]').each(function () {
                 if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
@@ -23,9 +21,36 @@
             $('#shopping-cart-collapse').collapse('hide');
         });
 
-//        $('#catalog-multilevel-menu, #catalog-multilevel-menu-2, #catalog-multilevel-menu-3').on('show.bs.collapse', function () {
-//            $('.catalog-multilevel-menu .in').collapse('hide');
-//        });  $('#catalog-multilevel-menu, #catalog-multilevel-menu-2, #catalog-multilevel-menu-3').on('show.bs.collapse', function () {
-//            $('.catalog-multilevel-menu .in').collapse('hide');
-//        });
+        $("#rangePrice").ionRangeSlider({
+            min: 0,
+            max: 5000,
+            type: 'double',
+            postfix: " р.",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $("#sliderRangeMight").ionRangeSlider({
+            min: 0,
+            max: 30,
+            type: 'double',
+            postfix: " Вт/м",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $(".scroll-container").mCustomScrollbar({
+            horizontalScroll:true,
+            autoDraggerLength:true,
+            contentTouchScroll: true,
+            theme: "dark-thick"
+        });
+
+        $("#toggleFilter").on("click", function() {
+            $(".row-offcanvas").toggleClass("active");
+        });
+
+        $("#toggleFilterClose").on("click", function() {
+            $(".row-offcanvas").removeClass("active");
+        });
     });
