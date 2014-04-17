@@ -43,6 +43,19 @@
             horizontalScroll:true,
             autoDraggerLength:true,
             contentTouchScroll: true,
+            scrollButtons:{
+                enable:true
+            },
+            theme: "dark-thick"
+        });
+
+        $(".scroll-container-vertical").mCustomScrollbar({
+            horizontalScroll:false,
+            autoDraggerLength:true,
+            contentTouchScroll: true,
+            scrollButtons:{
+                enable:true
+            },
             theme: "dark-thick"
         });
 
@@ -53,4 +66,5 @@
         $("#toggleFilterClose").on("click", function() {
             $(".row-offcanvas").removeClass("active");
         });
+
     });
