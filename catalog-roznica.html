@@ -23,6 +23,7 @@
     <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/bx_filter_vertical.css" rel="stylesheet">
     <!-- fotorama.css & fotorama.js. -->
     <link  href="css/fotorama.css" rel="stylesheet"> <!-- 2 KB -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -643,7 +644,7 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <aside class="sidebar-offcanvas col-md-2 col-xs-12">
+                    <aside class="sidebar-offcanvas bx_filter_vertical bx_blue col-md-2 col-xs-12">
                         <form action="" class="slide-filter-form">
 
                             <button type="button" id="toggleFilterClose" class="btn btn-primary btn-sm visible-xs">
@@ -672,18 +673,36 @@
                                 </h5>
                                 <div id="collapseManufacturers" class="slide-filter-panel-collapse collapse in">
                                     <div class="slide-filter-panel-collapse-panel-body">
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> LEDPROM / KHP
-                                                </label>
+                                    <div class="bx_filter_container active">
+
+                                        <span class="bx_filter_container_modef">
+                                            <div class="bx_filter_popup_result right" id="modef" style="display: inline-block;">
+                                                Выбрано: <span id="modef_num">3</span>  <span class="arrow"></span>
+                                                <a href="/catalog/2_germetichnye_ip65_68/index.php?set_filter=y&amp;arrFilter_67_505056507=Y">Показать</a>
+                                            </div>
+                                        </span>
+
+                                    <div class="bx_filter_block">
+                                    <span class="">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="checkbox">
+                                                    <label class="">
+                                                        <input type="checkbox" value="Y" name="arrFilter_67_3076719002" id="arrFilter_67_3076719002" onclick="smartFilter.click(this)">  LEDPROM/Тайвань                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Arlight / KHP
-                                                </label>
+                                    </span>
+                                    <span class="">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="checkbox">
+                                                    <label class="">
+                                                        <input type="checkbox" value="Y" name="arrFilter_67_505056507" id="arrFilter_67_505056507" onclick="smartFilter.click(this)">  Чина Продакшн                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
                                             </div>
                                         </div>
                                     </div>
