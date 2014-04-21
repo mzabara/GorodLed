@@ -324,22 +324,14 @@
     .product-kit-products-list{
       padding-bottom: 15px;
 
-      label{
-        padding: 0;
-        margin-right: 15px;
-        display: table-cell;
-      }
-
-      .btn{
-        white-space: normal!important;
-      }
-
       .product-kit-item{
+        display: inline-block;
+        vertical-align: top;
         padding: 10px;
-        margin: 10px;
-        width: 170px;
-        height: 225px;
+        width: 200px;
         background-color: #ffffff;
+        border: solid 1px @table-border-color;
+        margin-right: 7px;
 
         a{
           color: #575a5d;
@@ -347,11 +339,10 @@
             text-decoration: none;
           }
         }
-
         .promo-product-image-holder{
           display: block;
           text-align: center;
-          height: 110px;
+          height: 130px;
         }
 
         figcaption{
@@ -362,7 +353,11 @@
         }
 
         .articul{
+          display: block;
+          width: 100%;
           font-size: 12px;
+          text-align: center;
+          margin-left: 0!important;
         }
 
         .product-price{
@@ -371,6 +366,14 @@
           font-family: @font-family-sans-serif-bold;
           .fa-rub{
             font-size: 17px;
+          }
+        }
+        .product-kit-control{
+          .btn{
+            width: 100%;
+            display: block;
+            margin-top: 5px;
+            color: #ffffff!important;
           }
         }
       }
