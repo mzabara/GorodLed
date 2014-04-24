@@ -66,5 +66,5 @@
         $("#toggleFilterClose").on("click", function() {
             $(".row-offcanvas").removeClass("active");
         });
-
+        fakewaffle.responsiveTabs(['xs', 'sm']);
     });

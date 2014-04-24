@@ -223,6 +223,15 @@
       }
     }
   }
+  body{
+    margin-bottom: 0!important;
+  }
+  footer{
+    position: relative!important;
+  }
+  .row-flex{
+    .flex-display(block);
+  }
 }
 
 // Small grid
@@ -232,6 +241,11 @@
 
 @media (min-width: @screen-sm-min) {
   .make-grid(sm);
+
+  .row-flex{
+    .flex-display(flex);
+    .align-items(center);
+  }
 
   .catalog-page-header{
     text-align: left;
@@ -297,12 +311,48 @@
       }
     }
   }
-
+  .row-flex{
+    .flex-display(block);
+  }
+  .shopping-cart-holder{
+    .col-sm-4{
+      .control-label{
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 3px;
+        margin-right: 5px;
+      }
+      .form-control{
+        display: inline-block;
+        vertical-align: middle;
+        width: 70px;
+      }
+    }
+    .regular-price,
+    .discount-price{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+  }
 }
 
 @media (max-width: @screen-sm-min) {
-
-  /* outer div */
+  .checkout-holder{
+    .your-oder{
+      margin-top: 20px;
+      top: 0!important;
+      width: 100%!important;
+      background-color: #ffffff;
+      &.affix,
+      &.affix-top,
+      &.affix-bottom{
+        position: relative!important;
+      }
+    }
+  }
+   /* outer div */
   .row-offcanvas {
     position: relative;
     left: 0;
@@ -347,6 +397,12 @@
       text-align: center!important;
     }
   }
+  body{
+    margin-bottom: 0!important;
+  }
+  footer{
+    position: relative!important;
+  }
 }
 
 
@@ -356,6 +412,11 @@
 
 @media (min-width: @screen-md-min) {
   .make-grid(md);
+
+  .row-flex{
+    .flex-display(block);
+  }
+
   .product-main{
     .product-list{
       &.th{
@@ -399,6 +460,15 @@
         }
       }
     }
+  }
+
+}
+@media (max-width: @screen-md-min) {
+  body{
+    margin-bottom: 0!important;
+  }
+  footer{
+    position: relative!important;
   }
 }
 
@@ -445,5 +515,8 @@
       }
     }
   }
-
+  .row-flex{
+    .flex-display(flex);
+    .align-items(center);
+  }
 }

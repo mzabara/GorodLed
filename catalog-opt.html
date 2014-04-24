@@ -14,6 +14,7 @@
     <script src="js/jquery.mousewheel.min.js"></script> <!-- 9 KB -->
     <script src="js/jquery.mCustomScrollbar.min.js"></script> <!-- 9 KB -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/responsive-tabs.js"></script>
     <script src="js/function.js"></script>
 
     <!-- Bootstrap -->
@@ -25,6 +26,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!-- fotorama.css & fotorama.js. -->
     <link  href="css/fotorama.css" rel="stylesheet"> <!-- 2 KB -->
+    <link  href="css/bx_filter_vertical.css" rel="stylesheet"> <!-- 2 KB -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -542,572 +544,826 @@
 
 <main>
 <section class="smart-breadcrumbs">
-    <div class="container-min">
-        <ol class="breadcrumb">
-            <li><a href="#">Главная</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle ajax-link" data-toggle="dropdown">Каталог товаров <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="">Светодиодная лента</a>
-                    </li>
-                    <li>
-                        <a href="">Импульсные источники питания</a>
-                    </li>
-                    <li>
-                        <a href="">Управление светом</a>
-                    </li>
-                    <li>
-                        <a href="">Профили для лент</a>
-                    </li>
-                    <li>
-                        <a href="">Комплектующие для монтажа</a>
-                    </li>
-                    <li>
-                        <a href="">Светодиодные модули</a>
-                    </li>
-                    <li>
-                        <a href="">LED Неон флекс</a>
-                    </li>
-                    <li>
-                        <a href="">Светодиодные лампы</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="active">Светодиодные ленты ELITE</li>
-        </ol>
-    </div>
+    <ol class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle ajax-link" data-toggle="dropdown">Каталог товаров <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="">Светодиодная лента</a>
+                </li>
+                <li>
+                    <a href="">Импульсные источники питания</a>
+                </li>
+                <li>
+                    <a href="">Управление светом</a>
+                </li>
+                <li>
+                    <a href="">Профили для лент</a>
+                </li>
+                <li>
+                    <a href="">Комплектующие для монтажа</a>
+                </li>
+                <li>
+                    <a href="">Светодиодные модули</a>
+                </li>
+                <li>
+                    <a href="">LED Неон флекс</a>
+                </li>
+                <li>
+                    <a href="">Светодиодные лампы</a>
+                </li>
+            </ul>
+        </li>
+        <li class="active">Светодиодные ленты ELITE</li>
+    </ol>
 </section>
-<section class="product-cart-holder">
-    <div class="product-cart">
-        <div class="container-min">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Светодиодная лента LP 12V IP22 3528/60 led elite</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="media-tabs">
-                        <ul id="productCartMediaTab" class="nav nav-tabs">
-                            <li class="active"><a href="#photos" data-toggle="tab">Фото (4)</a></li>
-                            <li class=""><a href="#videos" data-toggle="tab">Видео (3)</a></li>
-                        </ul>
-                        <div id="productCartMediaTabContent" class="tab-content">
-                            <div class="tab-pane fade active in" id="photos">
-                                <span class="promo-label label-hit">хит</span>
-                                <div class="fotorama" data-width="100%" data-maxheight="100%" data-nav="thumbs">
-                                    <a href="images/product/1.jpg"></a>
-                                    <a href="images/product/2.jpg"></a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="videos">
-                                <div class="fotorama" data-width="100%" data-maxheight="100%" data-nav="thumbs">
-                                    <a href="http://youtu.be/ZTwB74eUvnA"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="availability">
-                                <span class="label label-success">В наличии</span>
-                            </div>
-                            <div class="articul">
-                                Арт.: 345879
-                            </div>
-                            <div class="score-rating">
-                                <input type="radio" id="sc-1" name="score" value="4"/>
-                                <label title="4 stars" for="sc-1">4 stars</label>
-                                <input type="radio" id="sc-2" name="score" value="3"/>
-                                <label title="3 stars" for="sc-2">3 stars</label>
-                                <input type="radio" id="sc-3" name="score" value="2"/>
-                                <label title="2 stars" for="sc-3">2 stars</label>
-                                <input type="radio" id="sc-4" name="score" value="1"/>
-                                <label title="1 stars" for="sc-4">1 stars</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div class="sku-items-holder">
-                                <div class="sku-items-row">
-
-                                    <div class="row">
-                                        <div class="btn-group col-md-12" data-toggle="buttons">
-                                            <div class="sku-items-row-title">Выберите цвет:</div>
-                                            <label class="btn btn-default active" title="Холодный белый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o1"><img src="images/colorpicker/1.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Белый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o2"><img src="images/colorpicker/2.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Нейтральный белый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o3"> <img src="images/colorpicker/3.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Холодный белый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o4"> <img src="images/colorpicker/4.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Синий" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o5"> <img src="images/colorpicker/5.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Зеленый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o6"> <img src="images/colorpicker/6.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Желтый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o7"> <img src="images/colorpicker/7.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Оранжевый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o8"> <img src="images/colorpicker/8.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Красный" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o9"> <img src="images/colorpicker/9.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default"  title="Пурпурный" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o10"> <img src="images/colorpicker/10.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default"  title="Фиолетовый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o11"> <img src="images/colorpicker/11.png" alt="" />
-                                            </label>
-                                            <label class="btn btn-default" title="Ультрафиолетовый" data-toggle="tooltip" data-placement="top">
-                                                <input type="radio" name="options" id="o12"> <img src="images/colorpicker/12.png" alt="" />
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="sku-items-row-title">Выберите класс:</div>
-                                            <ul class="sku-list">
-                                                <li class="dropdown">
-                                                    <a  href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                        <b class="caret pull-right"></b>
-                                                        Эконом 7 Лм
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a href="">Эконом 7 Лм</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Стандарт 4 Лм</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Элит 10 Лм</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="sku-items-row-title">Выберите вольтаж:</div>
-                                            <div class="btn-group" data-toggle="buttons">
-                                                <label class="btn btn-default">
-                                                    <input type="radio" name="options" id="option10"> 5 v
-                                                </label>
-                                                <label class="btn btn-default active">
-                                                    <input type="radio" name="options" id="option10"> 12 v
-                                                </label>
-                                                <label class="btn btn-default">
-                                                    <input type="radio" name="options" id="option11"> 24 v
-                                                </label>
-                                                <label class="btn btn-default">
-                                                    <input type="radio" name="options" id="option12"> 32 v
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cost-holder">
-                                        <form role="form">
-                                            <div class="row">
-
-                                                <div class="form-group col-md-3 col-sm-6">
-                                                    <label for="inputAmount" class="control-label">Количество:</label>
-                                                    <select class="form-control" id="inputAmount">
-                                                        <option value="">5</option>
-                                                        <option value="">10</option>
-                                                        <option value="">15</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col-md-9 col-sm-6">
-                                                    <div class="cost-title">
-                                                        Цена:
-                                                    </div>
-                                                    <div class="regular-price">
-                                                        000 000 <i class="fa fa-rub"></i>
-                                                    </div>
-                                                    <div class="old-price">
-                                                        000 000 <i class="fa fa-rub"></i>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="buy-control">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"/> Добавить к сравнению
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"/> Отложить товар
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-6">
-                                        <a href="#fastBuy" data-toggle="modal" class="btn btn-info">Быстрая покупка</a>
-                                        <a href="#" class="btn btn-primary">Добавить в корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="delivery-holder">
-                                <a href="#deliveryModal" data-toggle="modal"><img src="images/icons/fast-delivery.png" alt=""/><br><span class="ajax-link">Стоимость доставки</span></a>
-                                <a href="#paysModal" data-toggle="modal"><img src="images/icons/cash.png" alt=""/><br><span class="ajax-link">Способы оплаты</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="chars-tabs">
-                <ul id="productCartTab" class="nav nav-tabs">
-                    <li class="active"><a href="#chars" data-toggle="tab">Характеристики</a></li>
-                    <li class=""><a href="#description" data-toggle="tab">Описание</a></li>
-                    <li class=""><a href="#docs" data-toggle="tab">Документация</a></li>
-                    <li class=""><a href="#reviews" data-toggle="tab">Отзывы</a></li>
-                </ul>
-                <div id="productCartTabContent" class="tab-content">
-                    <div class="tab-pane fade active in" id="chars">
-                        <div class="product-characteristics">
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    Мощность Вт/м:
-                                </div>
-                                <div class="col-xs-7">
-                                    4.8
-                                </div>
-                            </div>
-                            <div class="row row-zebra">
-                                <div class="col-xs-5">
-                                    Количество диодов шт/м:
-                                </div>
-                                <div class="col-xs-7">
-                                    60
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    Световой поток диода Lm:
-                                </div>
-                                <div class="col-xs-7">
-                                    10
-                                </div>
-                            </div>
-                            <div class="row row-zebra">
-                                <div class="col-xs-5">
-                                    Угол излучения °:
-                                </div>
-                                <div class="col-xs-7">
-                                    120
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    Степень герметизации:
-                                </div>
-                                <div class="col-xs-7">
-                                    IP 22
-                                </div>
-                            </div>
-                            <div class="row row-zebra">
-                                <div class="col-xs-5">
-                                    Размер мм:
-                                </div>
-                                <div class="col-xs-7">
-                                    5000 х 8 х 1,8
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    Кратность резки:
-                                </div>
-                                <div class="col-xs-7">
-                                    50 мм или 3 диода
-                                </div>
-                            </div>
-                            <div class="row row-zebra">
-                                <div class="col-xs-5">
-                                    Норма упаковки м:
-                                </div>
-                                <div class="col-xs-7">
-                                    5
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    Клеящий слой на оборотной стороне:
-                                </div>
-                                <div class="col-xs-7">
-                                    Есть
-                                </div>
-                            </div>
-                            <div class="row row-zebra">
-                                <div class="col-xs-5">
-                                    Производитель:
-                                </div>
-                                <div class="col-xs-7">
-                                    КНР/LEDPROM
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-5">
-                                    ГАРАНТИЯ:
-                                </div>
-                                <div class="col-xs-7">
-                                    3 ГОДА
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="description">
-                        <p>Частое расположение диодов-120 штук на метр, обеспечивает равномерную засветку, даже при малом расстоянии от отражаемой поверхности.</p>
-                        <p>Данная лента чаще используется для контурной подсветки, декоративного освещения. Например, подсветка витрин в ювелирных магазинах.</p>
-                        <p>Светодиодная лента разрезанная на сегменты и с отсутствующим клеевым слоем обмену и возврату не подлежит!</p>
-                    </div>
-                    <div class="tab-pane fade" id="reviews">
-                        <h4>Вы можете оставить свой отзыв о товаре</h4>
-                        <form role="form">
-                            <div class="row">
-                                <div class="col-md-4">
-
-                                    <div class="form-group">
-                                        <div class="score-rating">
-                                            <input type="radio" id="score-10" name="score" value="5"/>
-                                            <label title="5 stars" for="score-10">5 stars</label>
-                                            <input type="radio" id="score-11" name="score" value="4"/>
-                                            <label title="4 stars" for="score-11">4 stars</label>
-                                            <input type="radio" id="score-12" name="score" value="3"/>
-                                            <label title="3 stars" for="score-12">3 stars</label>
-                                            <input type="radio" id="score-13" name="score" value="2"/>
-                                            <label title="2 stars" for="score-13">2 stars</label>
-                                            <input type="radio" id="score-14" name="score" value="1"/>
-                                            <label title="1 stars" for="score-14">1 stars</label>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Ваш email">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-8">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Текст отзыва"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <input type="submit" class="btn btn-primary" value="Опубликовать"/>
-                                </div>
-                            </div>
-                        </form>
-                        <h4>Отзывы о светодиодная лента LP 12V IP22 3528/60 led elite</h4>
-                        <ul class="review-list">
-                            <li>
-                                <h5><i class="fa fa-user"></i> Юлия <small>5 апреля</small></h5>
-                                <div class="score-rating">
-                                    <input type="radio" id="score-15" name="score" value="5"/>
-                                    <label title="5 stars" for="score-15">5 stars</label>
-                                    <input type="radio" id="score-16" name="score" value="4"/>
-                                    <label title="4 stars" for="score-16">4 stars</label>
-                                    <input type="radio" id="score-17" name="score" value="3"/>
-                                    <label title="3 stars" for="score-17">3 stars</label>
-                                    <input type="radio" id="score-18" name="score" value="2"/>
-                                    <label title="2 stars" for="score-18">2 stars</label>
-                                    <input type="radio" id="score-19" name="score" value="1"/>
-                                    <label title="1 stars" for="score-19">1 stars</label>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>Светодиодная лента для дома. Делали ремонт на кухне. Решили что подсветка потолка будет выполнена с помощью этой светодиодной ленты. В спальню брали с меньшей яркостью свечения,но консультанты посоветовали ленту elite, так как световой поток выше. Очень простое, недорогое и в то же время, красивое решение в оформлении кухни. И теперь на деле видим, что действительно светит гораздо ярче. Друзья приходят в гости посмотреть)) Сам заказ выполнили чётко. Правда, позвонили, сказали что привезут немного позже.Спасибо.</p>
-                                <div class="clearfix"></div>
-                                <div class="usefulness">
-                                    Полезен ли отзыв: <a href="#" class="yes">Да 1</a> / <a href="#" class="no">Нет 1</a>
-                                </div>
-                            </li>
-                            <li>
-                                <h5><i class="fa fa-user"></i> Роман <small>5 апреля</small></h5>
-                                <div class="score-rating">
-                                    <input type="radio" id="score-15" name="score" value="5"/>
-                                    <label title="5 stars" for="score-15">5 stars</label>
-                                    <input type="radio" id="score-16" name="score" value="4"/>
-                                    <label title="4 stars" for="score-16">4 stars</label>
-                                    <input type="radio" id="score-17" name="score" value="3"/>
-                                    <label title="3 stars" for="score-17">3 stars</label>
-                                    <input type="radio" id="score-18" name="score" value="2"/>
-                                    <label title="2 stars" for="score-18">2 stars</label>
-                                    <input type="radio" id="score-19" name="score" value="1"/>
-                                    <label title="1 stars" for="score-19">1 stars</label>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p>Светодиодная лента для дома. Делали ремонт на кухне. Решили что подсветка потолка будет выполнена с помощью этой светодиодной ленты. В спальню брали с меньшей яркостью свечения,но консультанты посоветовали ленту elite, так как световой поток выше. Очень простое, недорогое и в то же время, красивое решение в оформлении кухни. И теперь на деле видим, что действительно светит гораздо ярче. Друзья приходят в гости посмотреть)) Сам заказ выполнили чётко. Правда, позвонили, сказали что привезут немного позже.Спасибо.</p>
-                                <div class="clearfix"></div>
-                                <div class="usefulness">
-                                    Полезен ли отзыв: <a href="#" class="yes">Да 1</a> / <a href="#" class="no">Нет 1</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="product-kit-holder">
-                <h4>Купите в наборе c LP 12V IP22 3528/60 led elite</h4>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="product-kit-products-list scroll-container">
-
-                            <div class="product-kit-products-list scroll-container">
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/2.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">ARMANDO VICARIO 3 AP BePure</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        14 500 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-success btn-sm">Добавить в набор</a>
-                                    </div>
-                                </div>
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/3.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        000 000 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-danger btn-sm">Убрать из набора</a>
-                                    </div>
-                                </div>
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/4.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        000 000 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-danger btn-sm">Убрать из набора</a>
-                                    </div>
-                                </div>
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/1.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        000 000 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-danger btn-sm">Убрать из набора</a>
-                                    </div>
-                                </div>
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/6.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        000 000 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-success btn-sm">Добавить в набор</a>
-                                    </div>
-                                </div>
-                                <div class="product-kit-item">
-                                    <figure>
-                                        <div class="promo-product-image-holder">
-                                            <a href=""><img src="images/product/7.jpg" alt="" class="img-responsive"></a>
-                                        </div>
-                                        <figcaption>
-                                            <a href="">Светодиодная лента LP 12V IP22 3528/60 led elite</a>
-                                        </figcaption>
-                                    </figure>
-                                    <div class="articul">Арт.: 345879</div>
-                                    <div class="product-price">
-                                        000 000 <i class="fa fa-rub"></i>
-                                    </div>
-                                    <div class="product-kit-control">
-                                        <a href="" class="btn btn-success btn-sm">Добавить в набор</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="product-kit-cost-summ">
-                    <div class="cost">
-                        <div class="regular-price">
-                            Цена набора: 26 250 <i class="fa fa-rub"></i>
-                        </div>
-                        <div class="discount-price">
-                            26 250 <i class="fa fa-rub"></i>
-                        </div>
-                        <div class="profit-price">
-                            Ваша экономия: 440 <i class="fa fa-rub"></i>
-                        </div>
-                        <a href="#" class="btn btn-primary btn-sm">Дабавить набор в корзину</a>
-                    </div>
-                </div>
+<section class="row-offcanvas">
+<section class="catalog-page-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Светодиодные ленты</h1>
             </div>
         </div>
+
+        <div class="navbar-toggle col-xs-12">
+            <button type="button" id="toggleFilter" class="btn btn-primary btn-sm">
+                Показать фильтр
+            </button>
+        </div>
+
     </div>
 </section>
+<section class="catalog-list-holder">
 
+<div class="container-fluid">
+<div class="row">
+
+<aside class="sidebar-offcanvas bx_filter_vertical col-md-2 col-xs-12">
+    <form action="" class="slide-filter-form">
+
+        <button type="button" id="toggleFilterClose" class="btn btn-primary btn-sm visible-xs">
+            Скрыть фильтр
+        </button>
+
+        <div class="slide-filter-panel-group" id="slideFilterForm">
+
+            <h5 class="slide-filter-panel-title">
+                <a data-toggle="collapse" data-parent="#slideFilterForm" href="#collapsePrices">
+                    <b class="caret"></b> Цена
+                </a>
+            </h5>
+
+            <div id="collapsePrices" class="slide-filter-panel-collapse collapse in">
+                <div class="slide-filter-panel-collapse-panel-body">
+                    <input type="text" id="rangePrice" name="slider_range" value="" />
+                </div>
+            </div>
+
+
+            <h5 class="slide-filter-panel-title">
+                <a data-toggle="collapse" data-parent="#slideFilterForm" href="#collapseManufacturers">
+                    <b class="caret"></b> Производители
+                </a>
+            </h5>
+            <div id="collapseManufacturers" class="slide-filter-panel-collapse collapse in">
+                <div class="slide-filter-panel-collapse-panel-body">
+                    <div class="bx_filter_container active">
+
+                                        <span class="bx_filter_container_modef">
+                                            <div class="bx_filter_popup_result right" id="modef">
+                                                Выбрано: <span id="modef_num">3</span>  <span class="arrow"></span>
+                                                <a href="/catalog/2_germetichnye_ip65_68/index.php?set_filter=y&amp;arrFilter_67_505056507=Y">Показать</a>
+                                            </div>
+                                        </span>
+
+                        <div class="bx_filter_block">
+                                    <span class="">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="checkbox">
+                                                    <label class="">
+                                                        <input type="checkbox" value="Y" name="arrFilter_67_3076719002" id="arrFilter_67_3076719002" onclick="smartFilter.click(this)">  LEDPROM/Тайвань                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="checkbox">
+                                                    <label class="">
+                                                        <input type="checkbox" value="Y" name="arrFilter_67_505056507" id="arrFilter_67_505056507" onclick="smartFilter.click(this)">  Чина Продакшн                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="slide-filter-panel-title">
+                <a data-toggle="collapse" data-parent="#slideFilterForm" href="#collapseDiodsType">
+                    <b class="caret"></b> Тип диода
+                </a>
+            </h5>
+            <div id="collapseDiodsType" class="slide-filter-panel-collapse collapse in">
+                <div class="slide-filter-panel-collapse-panel-body">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 3528
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 5050
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 5630
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 335
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 3020
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 2835
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> SMD 3014
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> DIP
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="slide-filter-panel-title">
+                <a data-toggle="collapse" data-parent="#slideFilterForm" href="#collapseMight">
+                    <b class="caret"></b> Мощность диода
+                </a>
+            </h5>
+
+            <div id="collapseMight" class="slide-filter-panel-collapse collapse in">
+                <div class="slide-filter-panel-collapse-panel-body">
+                    <input type="text" id="sliderRangeMight" name="slider_range" value="" />
+                </div>
+            </div>
+
+            <div class="slide-filter-panel-result-control">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        Выбрано 47 товаров
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 text-right">
+                        <button type="submit" class="btn btn-primary btn-sm">Показать</button>
+                    </div>
+                    <div class="col-xs-6">
+                        <button type="submit" class="btn btn-primary btn-sm">Сбросить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</aside>
+
+    <article class="product-main col-md-10 col-xs-12" role="main">
+        <div class="catalog-opt-holder">
+        <div class="scroll-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Фото</th>
+                        <th>Цвет</th>
+                        <th>Вольтаж</th>
+                        <th>Класс</th>
+                        <th>Розн. цена</th>
+                        <th>Ваша цена</th>
+                        <th>На складе</th>
+                        <th>Дата поступления</th>
+                        <th class="text-center">Кол-во</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="catalog-opt-item">
+                    <tr>
+                        <td colspan="10">
+                            <h4>
+                            <div class="availability">
+                                <div class="articul">
+                                    Арт.: 345879
+                                </div>
+                            </div>
+                            <a href="#">Светодиодная лента RT 2-5000 24V (3528, 300 LED, LUX)</a>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="opt-item-photo">
+                            <a href="#fast-view" data-toggle="modal">
+                                <img src="images/product/3.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td rowspan="5">
+                            <ul class="sku-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <b class="caret pull-right"></b>
+                                        <img src="images/colorpicker/1.png" alt=""/>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/1.png" alt=""/> Холодный белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/2.png" alt=""/> Белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/3.png" alt=""/> Теплый белый
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td rowspan="5">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios1" value="option1" checked>
+                                    5 v
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios2" value="option2">
+                                    12 v
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios3" value="option3">
+                                    24 v
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios4" value="option4">
+                                    36 v
+                                </label>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_2" id="optionsRadios5" value="option5" checked>
+                                    Эконом 3.5 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="danger">
+                            100 м
+                        </td>
+                        <td class="danger">
+                            Ожидается 25.05.14
+                        </td>
+                        <td rowspan="5" class="text-center">
+                            <select class="input-sm">
+                                <option value="">
+                                    5
+                                </option>
+                                <option value="">
+                                    10
+                                </option>
+                            </select>
+                        </td>
+                        <td rowspan="5" class="text-right">
+                            <a href="" class="btn btn-sm btn-warning">Предзаказ</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios6" value="option6">
+                                    Стандарт 4 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            1 000 м
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios7" value="option7">
+                                    Люкс 5 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_1" id="optionsRadios8" value="option8">
+                                    Элит 20 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="catalog-opt-item">
+                    <tr>
+                        <td colspan="10">
+                            <h4>
+                            <div class="availability">
+                                <div class="articul">
+                                    Арт.: 345879
+                                </div>
+                            </div>
+                            <a href="#">Светодиодная лента RT 2-5000 24V (3528, 300 LED, LUX)</a>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="opt-item-photo">
+                            <a href="#fast-view" data-toggle="modal">
+                                <img src="images/product/2.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td rowspan="5">
+                            <ul class="sku-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <b class="caret pull-right"></b>
+                                        <img src="images/colorpicker/7.png" alt=""/>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/1.png" alt=""/> Холодный белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/2.png" alt=""/> Белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/3.png" alt=""/> Теплый белый
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td rowspan="5">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_3" id="optionsRadios9" value="option9" checked>
+                                    5 v
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_3" id="optionsRadios10" value="option10">
+                                    12 v
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_4" id="optionsRadios11" value="option11" checked>
+                                    Стандарт 4 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                           Нет в наличии
+                        </td>
+                        <td>
+                        </td>
+                        <td rowspan="5" class="text-center">
+                            <select class="input-sm">
+                                <option value="">
+                                    5
+                                </option>
+                                <option value="">
+                                    10
+                                </option>
+                            </select>
+                        </td>
+                        <td rowspan="5" class="text-right">
+                            <a href="" class="btn btn-sm btn-info">Уточнить поступление</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_4" id="optionsRadios12" value="option12"d>
+                                    Люкс 5 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_4" id="optionsRadios13" value="option13">
+                                    Элит 20 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="catalog-opt-item">
+                    <tr>
+                        <td colspan="10">
+                            <h4>
+                            <div class="availability">
+                                <div class="articul">
+                                    Арт.: 345879
+                                </div>
+                            </div>
+                            <a href="#">Светодиодная лента RT 2-5000 24V (3528, 300 LED, LUX)</a>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="opt-item-photo">
+                            <a href="#fast-view" data-toggle="modal">
+                                <span class="promo-label label-newst">Новинка</span>
+                                <img src="images/product/2.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td>
+                            <ul class="sku-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <b class="caret pull-right"></b>
+                                        <img src="images/colorpicker/8.png" alt=""/>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/1.png" alt=""/> Холодный белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/2.png" alt=""/> Белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/3.png" alt=""/> Теплый белый
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_5" id="optionsRadios14" value="option14" checked>
+                                    12 v
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_6" id="optionsRadios15" value="option15" checked>
+                                    Элит 20 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-center">
+                            <select class="input-sm">
+                                <option value="">
+                                    5
+                                </option>
+                                <option value="">
+                                    10
+                                </option>
+                            </select>
+                        </td>
+                        <td class="text-right">
+                            <a href="" class="btn btn-sm btn-success">Оформить заказ</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="catalog-opt-item">
+                    <tr>
+                        <td colspan="10">
+                            <h4>
+                            <div class="availability">
+                                <div class="articul">
+                                    Арт.: 345879
+                                </div>
+                            </div>
+                            <a href="#">Светодиодная лента RT 2-5000 24V (3528, 300 LED, LUX)</a>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="opt-item-photo">
+                            <a href="#fast-view" data-toggle="modal">
+                                <span class="promo-label label-akc">Акция</span>
+                                <img src="images/product/7.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td>
+                            <ul class="sku-list">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <b class="caret pull-right"></b>
+                                        <img src="images/colorpicker/9.png" alt=""/>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/1.png" alt=""/> Холодный белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/2.png" alt=""/> Белый
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/colorpicker/3.png" alt=""/> Теплый белый
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_7" id="optionsRadios16" value="option16" checked>
+                                    12 v
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios_8" id="optionsRadios17" value="option17" checked>
+                                    Элит 20 Лм
+                                </label>
+                            </div>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-center">
+                            <select class="input-sm">
+                                <option value="">
+                                    5
+                                </option>
+                                <option value="">
+                                    10
+                                </option>
+                            </select>
+                        </td>
+                        <td class="text-right">
+                            <a href="" class="btn btn-sm btn-primary">Купить</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>Шаблон таблицы для товаров без СКУ</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Фото</th>
+                        <th>Розн. цена</th>
+                        <th>Ваша цена</th>
+                        <th>На складе</th>
+                        <th>Дата поступления</th>
+                        <th class="text-center">Кол-во</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="catalog-opt-item">
+                    <tr>
+                        <td colspan="7">
+                            <h4>
+                            <div class="availability">
+                                <div class="articul">
+                                    Арт.: 345879
+                                </div>
+                            </div>
+                            <a href="#">Герметичный блок питания ARPV-LV12005 (12V, 0.4A, 5W)</a>
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="opt-item-photo">
+                            <a href="#fast-view" data-toggle="modal">
+                                <span class="promo-label label-hit">хит</span>
+                                <img src="images/product/7.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td class="price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td class="price your-price">
+                            000 000 <i class="fa fa-rub"></i>
+                        </td>
+                        <td>
+                            15 000 м
+                        </td>
+                        <td>
+                        </td>
+                        <td class="text-center">
+                            <select class="input-sm">
+                                <option value="">
+                                    5
+                                </option>
+                                <option value="">
+                                    10
+                                </option>
+                            </select>
+                        </td>
+                        <td class="text-right">
+                            <a href="" class="btn btn-sm btn-primary">Купить</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </article>
+
+</div>
+</div>
+
+</section>
+</section>
 <section class="seo-text">
     <div class="container">
         <p>«GOROD LED» — КРУПНЕЙШИЙ РОССИЙСКИЙ ИНТЕРНЕТ МАГАЗИН ПО ПРОДАЖЕ СВЕТОДИОДНОЙ ТЕХНИКИ И СВЕТОДИОДНОГО ОБОРУДОВАНИЯ.</p>
@@ -1278,7 +1534,6 @@
     </section>
 
 </footer>
-
 <div class="modal fade fast-view" id="fast-view">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
@@ -1459,25 +1714,17 @@
 
                     <div class="col-md-6">
                         <div class="sku-items-row-title">Выберите класс:</div>
-                        <ul class="sku-list">
-                            <li class="dropdown">
-                                <a  href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <b class="caret pull-right"></b>
-                                    Эконом 7 Лм
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="">Эконом 7 Лм</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Стандарт 4 Лм</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Элит 10 Лм</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <select class="form-control">
+                            <option value="">
+                                Эконом 7 Лм
+                            </option>
+                            <option value="">
+                                Стандарт 4 Лм
+                            </option>
+                            <option value="">
+                                Элит 10 Лм
+                            </option>
+                        </select>
                     </div>
 
                 </div>
@@ -1527,7 +1774,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <a href="">
-                                <img src="images/product/1.jpg" alt="" class="img-responsive"/>
+                                <img src="images/product/1.jpg" alt=""/>
                             </a>
                         </div>
                         <div class="col-md-5">
@@ -1597,30 +1844,17 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<div class="modal fade" id="paysModal">
-    <div class="modal-dialog">
+<div class="modal fade" id="pickupModal">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Способы оплаты</h3>
+                <h3 class="modal-title">Самовывоз</h3>
             </div>
             <div class="modal-body">
-                <h4>Банковские карты</h4>
-                <ul class="list-inline">
-                    <li>
-                        <a href="">
-                            <img src="images/icons/visa.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="images/icons/mastercard.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <h4>Электронные деньги</h4>
-                <h4>Банковский перевод</h4>
-                <h4>Оплата наличными</h4>
+                <p>
+                    Вы можете самостоятельно забрать заказ по адресу:  ул. Южный бульвар, д. 6. С 9:00 до 16:00.
+                </p>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -1630,25 +1864,18 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Способы и стоимости доставки</h3>
+                <h3 class="modal-title">Варианты и стоимости доставки</h3>
             </div>
             <div class="modal-body">
-                <form action="">
-                    <input type="text" class="form-control" placeholder="Выберите свой город доставки" x-webkit-speech="x-webkit-speech">
-                </form>
                 <h4>Деловые линии</h4>
                 <p>До филиала транспортной компании, 700 руб., 4 дня. До дверей, 1000 руб., 4 дня.</p>
                 <h4>Автотрейдинг</h4>
                 <p>До филиала транспортной компании, 700 руб. 4 дня. До дверей, 1000 руб., 4 дня.</p>
                 <h4>ПЭК</h4>
                 <p>До филиала транспортной компании, 700 руб. 4 дня. До дверей, 1000 руб., 4 дня.</p>
-                <h4>Самовывоз</h4>
-                <p>
-                    Вы можете самостоятельно забрать заказ по адресу:  ул. Южный бульвар, д. 6. С 9:00 до 16:00.
-                </p>
-
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
-</div><!-- /.modal --></body>
+</div><!-- /.modal -->
+</body>
 </html>

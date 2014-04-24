@@ -1,3 +1,7 @@
+.catalog-list-holder{
+  margin: 10px 0;
+}
+
 .promo-label{
   position: absolute;
   top: 0;
@@ -20,9 +24,14 @@
 }
 
 .smart-breadcrumbs{
+  .container{
+    .breadcrumb{
+      padding:15px 0;
+    }
+  }
   .breadcrumb{
     background: none;
-    padding: 13px 0 17px 0;
+    padding: 15px;
     margin-bottom: 0;
     .dropdown-menu{
       margin-top: 15px;
@@ -55,6 +64,13 @@
   .navbar-toggle{
     margin: 5px 0 15px 0;
     padding: 0;
+  }
+
+  .container{
+    h1{
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   h1{
@@ -443,6 +459,114 @@
         a{
           padding: 5px;
         }
+      }
+    }
+  }
+}
+
+
+.catalog-opt-holder{
+  padding: 0 15px;
+
+  .table{
+    width: 100%;
+    tr{
+      th,
+      td{
+        padding:7px 5px;
+        font-size: 12px;
+        vertical-align: middle;
+        .radio{
+          margin: 0;
+          & + .radio{
+            margin-top: 5px;
+          }
+        }
+        .btn-warning{
+          color: #111111;
+        }
+      }
+      th{
+        padding: 7px;
+      }
+    }
+  }
+
+  .opt-item-photo{
+    width: 130px!important;
+    a{
+      img{
+        width: 130px!important;
+      }
+      display: block;
+      position: relative;
+      &:after{
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        padding:3px 7px;
+        content: "\f00e";
+        font-family: fontawesome;
+        background-color: rgba(0,0,0,.55);
+        color: #ffffff;
+        font-size: 15px;
+      }
+      &:hover{
+        &:after{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .sku-list{
+    min-width: 47px;
+    .dropdown-menu{
+      li{
+        font-size: 12px!important;
+      }
+    }
+  }
+
+  .price{
+    font-size: 13px!important;
+    font-family: @font-family-sans-serif-medium;
+    .fa-rub{
+      font-size: 14px!important;
+    }
+    &.your-price{
+      color: @brand-success;
+    }
+  }
+
+  h4{
+    margin: -5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    .availability{
+      float: right;
+      font-size: 12px;
+      font-weight: normal;
+      .label{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        font-weight: normal;
+        border-radius: 0;
+      }
+      .articul{
+        margin-top: 3px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    a{
+      color: #111111;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
       }
     }
   }
