@@ -749,6 +749,9 @@ pre code {
 .container-min {
   margin: 0 auto;
 }
+.container-half {
+  margin: 0 auto;
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -1680,6 +1683,9 @@ pre code {
   .product-main .product-list.th > li {
     width: 25%;
   }
+  .container-half {
+    width: 80%;
+  }
   .container-min {
     width: 90%!important;
   }
@@ -1711,6 +1717,9 @@ pre code {
   }
 }
 @media (max-width: 992px) {
+  .container-half {
+    width: 90%;
+  }
   body {
     margin-bottom: 0!important;
   }
@@ -1874,6 +1883,9 @@ pre code {
   }
   .col-lg-offset-0 {
     margin-left: 0%;
+  }
+  .container-half {
+    width: 65%;
   }
   .container-min {
     width: 87%!important;
@@ -5905,7 +5917,7 @@ main .index-promo-holder {
 main .index-promo-holder .hit-tabs {
   position: absolute;
   width: 100%;
-  bottom: 5%;
+  bottom: 10px;
 }
 main .index-promo-holder .hit-tabs .tab-content #videos .thumbnail:after {
   position: absolute;
@@ -5933,16 +5945,27 @@ main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption {
   bottom: 4px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
+  text-align: center;
+}
+main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption .item-title {
+  display: block;
+  overflow: hidden;
+  height: 35px;
+  min-height: 35px;
 }
 main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption .cost {
   font-family: "PF Square Sans Medium";
 }
 main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption .cost .price-regular {
-  display: block;
+  display: inline-block;
   font-size: 17px;
+  margin-right: 10px;
+}
+main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption .cost .price-regular .fa-rub {
+  font-size: 15px;
 }
 main .index-promo-holder .hit-tabs .tab-content .thumbnail .caption .cost .price-old {
-  display: block;
+  display: inline-block;
   font-size: 14px;
   text-decoration: line-through;
 }

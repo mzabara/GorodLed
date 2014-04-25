@@ -25,6 +25,10 @@
   margin: 0 auto;
 }
 
+.container-half{
+  margin: 0 auto;
+}
+
 // Fluid container
 //
 // Utilizes the mixin meant for fixed width containers, but without any defined
@@ -426,6 +430,11 @@
       }
     }
   }
+
+  .container-half{
+    width: 80%;
+  }
+
   .container-min{
     width: 90%!important;
   }
@@ -464,6 +473,9 @@
 
 }
 @media (max-width: @screen-md-min) {
+  .container-half{
+    width: 90%;
+  }
   body{
     margin-bottom: 0!important;
   }
@@ -479,6 +491,10 @@
 
 @media (min-width: @screen-lg-min) {
   .make-grid(lg);
+
+  .container-half{
+    width: 65%;
+  }
   .container-min{
     width: 87%!important;
   }
