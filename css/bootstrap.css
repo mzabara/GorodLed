@@ -306,6 +306,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .img-rounded {
@@ -321,6 +322,7 @@ img {
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .img-circle {
@@ -925,6 +927,9 @@ pre code {
   margin-left: 0%;
 }
 @media (min-width: 480px) {
+  .profile-sidenav.info {
+    position: relative!important;
+  }
   .catalog-page-header {
     text-align: center;
   }
@@ -1123,6 +1128,9 @@ pre code {
   }
   .col-xs-offset-0 {
     margin-left: 0%;
+  }
+  .profile-sidenav.info {
+    position: relative!important;
   }
   /* outer div */
   .row-offcanvas {
@@ -1672,6 +1680,9 @@ pre code {
   }
   .col-md-offset-0 {
     margin-left: 0%;
+  }
+  .profile-sidenav.info {
+    position: fixed!important;
   }
   .row-flex {
     display: -webkit-block;
@@ -4322,7 +4333,7 @@ a.list-group-item.active > .badge,
   line-height: 1.428571429;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -4339,6 +4350,78 @@ a.thumbnail.active {
 .thumbnail .caption {
   padding: 9px;
   color: #333333;
+}
+.albums-holder {
+  padding: 10px;
+}
+.albums-holder:before,
+.albums-holder:after {
+  content: " ";
+  display: table;
+}
+.albums-holder:after {
+  clear: both;
+}
+.albums-holder:before,
+.albums-holder:after {
+  content: " ";
+  display: table;
+}
+.albums-holder:after {
+  clear: both;
+}
+.albums-holder h2 {
+  margin-top: 0;
+}
+.albums-holder .albums-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.albums-holder .albums-list li {
+  width: 300px;
+  height: 235px;
+  float: left;
+  margin: 7px;
+}
+.albums-holder .albums-list li:hover {
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+}
+.albums-holder .albums-list .thumbnail {
+  position: relative;
+}
+.albums-holder .albums-list .thumbnail img {
+  width: 290px;
+  height: 193px;
+}
+.albums-holder .albums-list .thumbnail .list-info {
+  color: #ffffff;
+  font-size: 13px;
+  text-align: right;
+  padding: 7px;
+  background-color: #111111;
+}
+.albums-holder .albums-list .thumbnail .caption {
+  position: absolute;
+  top: auto;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #111111;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+.albums-holder .albums-list .thumbnail .caption h5 {
+  margin: 0;
+  line-height: normal;
+}
+.albums-holder .albums-list .thumbnail .caption a {
+  color: #ffffff;
+}
+.albums-holder .albums-list .thumbnail .caption a:hover {
+  text-decoration: none;
 }
 .alert {
   padding: 15px;
@@ -5888,6 +5971,10 @@ header #shopping-cart-holder .table tr.total-cost td .btn {
 }
 header #shopping-cart-holder .table tr td {
   vertical-align: middle;
+}
+header #shopping-cart-holder .table tr td.sh-product-photo {
+  width: 80px;
+  overflow: hidden;
 }
 header #shopping-cart-holder .table tr td .cost {
   font-size: 16px;

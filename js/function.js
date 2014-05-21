@@ -1,4 +1,5 @@
     $(document).ready(function () {
+
         $('[data-toggle="tooltip"]').tooltip('hide');
         $('[data-toggle="popover"]').popover();
         $('body').on('click', function (e) {
@@ -67,20 +68,4 @@
             $(".row-offcanvas").removeClass("active");
         });
         fakewaffle.responsiveTabs(['xs', 'sm']);
-
-        $(function(){
-            $('.profile-sidenav').carousel({});
-
-            var $root = $('html, body');
-
-            $('a').click(function() {
-                var href = $.attr(this, 'href');
-                $root.animate({
-                    scrollTop: $(href).offset().top
-                }, 500, function () {
-                    window.location.hash = href;
-                });
-                return false;
-            });
-        })
     });
