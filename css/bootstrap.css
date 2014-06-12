@@ -6927,6 +6927,7 @@ input:checked ~ .fast-view .score-rating label:before {
   display: block;
   font-family: "PF Square Sans Medium", Arial, sans-serif;
   font-size: 22px;
+  line-height: 26px;
 }
 .fast-view .product-characteristics .cost-holder .regular-price .fa {
   font-size: 20px;
@@ -6934,12 +6935,31 @@ input:checked ~ .fast-view .score-rating label:before {
 .fast-view .product-characteristics .cost-holder .old-price {
   display: block;
   font-family: "PF Square Sans Medium", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: line-through;
   color: #db5c55;
 }
 .fast-view .product-characteristics .cost-holder .old-price .fa {
   font-size: 14px;
+}
+.fast-view .product-characteristics .cost-holder .measure_name_price {
+  font-size: 14px;
+}
+.fast-view .product-characteristics .cost-holder .measure_name_price:before,
+.fast-view .product-characteristics .cost-holder .measure_name_price:after {
+  content: " ";
+  display: table;
+}
+.fast-view .product-characteristics .cost-holder .measure_name_price:after {
+  clear: both;
+}
+.fast-view .product-characteristics .cost-holder .measure_name_price:before,
+.fast-view .product-characteristics .cost-holder .measure_name_price:after {
+  content: " ";
+  display: table;
+}
+.fast-view .product-characteristics .cost-holder .measure_name_price:after {
+  clear: both;
 }
 .promo-product-list {
   list-style-type: none;
